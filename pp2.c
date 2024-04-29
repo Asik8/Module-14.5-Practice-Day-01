@@ -16,7 +16,7 @@ int main()
 {
     int t;
     scanf("%d",&t);
-    int st=1,sp=t-1;
+    int st=(t*2)-1,sp=0;
  
     while(t--)
     {
@@ -25,8 +25,8 @@ int main()
         for(int i=0;i<st;i++)
             printf("*");
         printf("\n");
-        st+=1;
-        sp--;
+        st-=2;
+        sp++;
     }
 
     return 0;
